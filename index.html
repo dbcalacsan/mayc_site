@@ -154,5 +154,31 @@
     const tweet = document.getElementById('tweet');
     tweet.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent('Dive into the backstory of MAYC #7455') + '&url=' + encodeURIComponent(websiteUrl);
   </script>
+  <style>
+@keyframes fadeInText {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInImage {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes fadeInButtons {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeInText {
+  animation: fadeInText 1.2s ease-out forwards;
+}
+.animate-fadeInImage {
+  animation: fadeInImage 1.2s ease-out forwards;
+  animation-delay: 0.6s;
+}
+.animate-fadeInButtons {
+  animation: fadeInButtons 1s ease-out forwards;
+  animation-delay: 1.2s;
+}
+</style>
 </body>
 </html>
