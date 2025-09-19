@@ -20,14 +20,33 @@
       <p class="mt-2 text-lg md:text-xl text-zinc-700 max-w-2xl">How the mutant ape came to life — origin beats, visual reference, and on-chain receipts.</p>
 
       <!-- QUICK LINKS (replace # with your real URLs) -->
-   <div class="mt-6 flex flex-wrap gap-3 opacity-0 animate-fadeInButtons">
-  <a href="#" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800">Origin Story</a>
-  <a href="#" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800">Timeline</a>
-  <a href="https://opensea.io/item/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/7455" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800">OpenSea</a>
-  <a href="https://etherscan.io/address/0x60e4d786628fea6478f785a6d7e704777c86a7c6" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800">Etherscan</a>
-  <a href="https://boredapeyachtclub.com/profile/0xdc93be754755d957aa0f5a952504bce24152ccb9" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800">Profile</a>
-  <a href="#" class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800">Press</a>
+ <div class="mt-6 flex flex-wrap gap-3">
+  <a href="#"
+     class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800 hover-lift opacity-0 animate-fadeInUp"
+     style="animation-delay: 0.00s;">Origin Story</a>
+
+  <a href="#"
+     class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800 hover-lift opacity-0 animate-fadeInUp"
+     style="animation-delay: 0.10s;">Timeline</a>
+
+  <a href="https://opensea.io/item/ethereum/0x60e4d786628fea6478f785a6d7e704777c86a7c6/7455"
+     class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800 hover-lift opacity-0 animate-fadeInUp"
+     style="animation-delay: 0.20s;">OpenSea</a>
+
+  <a href="https://etherscan.io/address/0x60e4d786628fea6478f785a6d7e704777c86a7c6"
+     class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800 hover-lift opacity-0 animate-fadeInUp"
+     style="animation-delay: 0.30s;">Etherscan</a>
+
+  <a href="https://boredapeyachtclub.com/profile/0xdc93be754755d957aa0f5a952504bce24152ccb9"
+     class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800 hover-lift opacity-0 animate-fadeInUp"
+     style="animation-delay: 0.40s;">Profile</a>
+
+  <a href="#"
+     class="inline-flex items-center gap-2 rounded-full bg-zinc-900 text-white px-4 py-2 text-sm hover:bg-zinc-800 hover-lift opacity-0 animate-fadeInUp"
+     style="animation-delay: 0.50s;">Press</a>
 </div>
+
+
     </div>
     <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-8 pb-10">
 <div class="relative overflow-hidden max-w-5xl mx-auto px-4 sm:px-6 md:px-8">
@@ -212,6 +231,14 @@
 }
 .animate-fadeInUp {
   animation: fadeInUp 0.7s ease-out forwards;
+}
+
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.hover-lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
     
 </style>
